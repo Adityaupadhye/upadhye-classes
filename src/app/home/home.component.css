@@ -18,11 +18,13 @@ header{
 }
 
 .title{
-    font-size: 60px;
-    color: black;
+    font-size: 55px;
+    color:black;
     font-weight: bold;
     word-wrap: normal;
     text-align: left;
+    background-color: rgba(250, 235, 215, 0.377);
+    border-radius: 4px;
 }
 
 .text{
@@ -30,4 +32,19 @@ header{
     font-weight: 700;
     font-size: 25px;
     color: black;
+}
+
+.features{
+    font-size: 20px;
+    vertical-align: middle;
+}
+
+ul{
+    font-weight: bold;
+}
+
+li:hover{
+    color: orangered;
+    background-color: purple;
+
 }
