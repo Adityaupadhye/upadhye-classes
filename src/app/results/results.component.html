@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="container-fluid">
+  <p class="text-center title">Results of Upadhye Classes CBSE Board</p>
+  <div class="row my-3 text-center">
+    <div class="col-md-4 px-4 w-50 my-1">
+        <div class="card card-bg pl-3">
+            <h1 class="card-title"><u>2020</u></h1>
+            <div class="card-text font-weight-bold txt" *ngFor="let res of res20">
+                {{res.name}}&emsp;{{res.mrks}}
+            </div>
+          </div>
+    </div>
+    <div class="col-md-4 px-4 w-50 my-1">
+        <div class="card card-bg pl-3">
+            <h1 class="card-title"><u>2019</u></h1>
+            <div class="card-text font-weight-bold txt" *ngFor="let res of res19">
+                {{res.name}}&emsp;{{res.mrks}}
+            </div>
+          </div>
+    </div>
+    <div class="col-md-4 w-50 px-4 my-1">
+        <div class="card card-bg pl-3">
+            <h1 class="card-title"><u>2018</u></h1>
+            <div class="card-text font-weight-bold txt" *ngFor="let res of res18">
+                {{res.name}}&emsp;{{res.mrks}}
+            </div>
+          </div>
+    </div>
+  </div>
+  <div class="row"></div>
+</div>

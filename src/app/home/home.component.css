@@ -1,0 +1,22 @@
+.custom-bg{
+    background-image: url('../../assets/cls1.jpeg');
+    background-repeat: no-repeat;
+    background-size:80%;
+    background-position: right;
+    height: 100%;
+}
+
+.title{
+    font-size: 60px;
+    color: black;
+    font-weight: bold;
+    word-wrap: normal;
+    text-align: left;
+}
+
+.text{
+    font-family: tekton-pro, sans-serif;
+    font-weight: 700;
+    font-size: 25px;
+    color: black;
+}

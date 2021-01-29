@@ -124,5 +124,8 @@
       }
     }
   },
-  "defaultProject": "upadhyeClasses"
+  "defaultProject": "upadhyeClasses",
+  "cli": {
+    "analytics": "864f8759-d27f-4cca-8b4f-0073652b9c8d"
+  }
 }
