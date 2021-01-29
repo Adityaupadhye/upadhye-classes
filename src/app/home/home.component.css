@@ -1,3 +1,14 @@
+header{
+    background-color: purple;
+}
+
+.head-span{
+    background-color: rgb(83, 0, 83);
+    color: antiquewhite;
+    border-radius: 4px;
+    border: 2px solid gold;
+}
+
 .custom-bg{
     background-image: url('../../assets/cls1.jpeg');
     background-repeat: no-repeat;
