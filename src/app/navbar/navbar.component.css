@@ -17,3 +17,7 @@ nav{
 .nav-bg{
     background-color: purple;
 }
+
+.icon{
+    color: red; font-size: 35px; background-color: black; border-radius: 8px;
+}
