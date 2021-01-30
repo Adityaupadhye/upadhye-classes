@@ -62,6 +62,31 @@ export class ResultsComponent implements OnInit {
     { name: "Janhavi Singh", mrks: "75 %"},   
   ]
 
+  res1020 = [
+    { name: "Aparna", mrks: "98.6 %"},
+    { name: "Tanay Shahane", mrks: "96 %"},
+    { name: "Ananya", mrks: "95 %"},
+    { name: "Tanvi", mrks: "92 %"},
+    { name: "Divija Arjunwadkar", mrks: "91.2 %"},
+    { name: "Ritika", mrks: "90 %"},
+  ]
+
+  res1019 = [
+    { name: "Vaishnavi", mrks: "98.5 %"},
+    { name: "Anjana Shukla", mrks: "98 %"},
+    { name: "Mihir Chaube", mrks: "89 %"},
+    { name: "Amulya", mrks: "86 %"},
+  ]
+
+  res1018 = [
+    { name: "Sanskruti", mrks: "96 %"},
+    { name: "Sharvari Patil", mrks: "94 %"},
+    { name: "Anushka", mrks: "92 %"},
+    { name: "Tanvi", mrks: "93 %"},
+    { name: "Vidhi", mrks: "90 %"},
+    { name: "Siona", mrks: "89 %"},
+  ]
+
   ngOnInit(): void {
   }
 
