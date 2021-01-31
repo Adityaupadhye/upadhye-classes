@@ -1,1 +1,9 @@
 <app-navbar></app-navbar>
+<div class="container-fluid">
+    <h3 class="m-2" style="color: antiquewhite; font-size: 20px;">Here's what students have written about Ma'am</h3>
+    <div class="card-columns">
+        <div class="card" *ngFor="let path of paths">
+            <img class="card-img-top" src={{path}} alt="students views">
+        </div>
+    </div>
+</div>
