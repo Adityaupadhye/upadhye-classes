@@ -1,1 +1,8 @@
 <app-navbar></app-navbar>
+<div class="container-fluid mt-3">
+    <div class="card-columns">
+        <div class="card m-2" *ngFor="let path of galleryPath">
+            <img class="card-img-top" src={{path}} alt="class photo">
+        </div>
+    </div>
+</div>

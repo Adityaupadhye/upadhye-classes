@@ -9,6 +9,18 @@ export class GalleryComponent implements OnInit {
 
   constructor() { }
 
+  galleryPath=[
+    "/assets/gallery/cls1.jpeg",
+    "/assets/gallery/cls2.jpg",
+    "/assets/gallery/cls3.jpg",
+    "/assets/gallery/cls4.jpg",
+    "/assets/gallery/cls5.jpg",
+    "/assets/gallery/cls6.jpg",
+    "/assets/gallery/cls7.jpg",
+    "/assets/gallery/cls8.jpg",
+    "/assets/gallery/cls9.jpg"
+  ]
+
   ngOnInit(): void {
   }
 
