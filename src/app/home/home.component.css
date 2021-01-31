@@ -10,7 +10,7 @@ header{
 }
 
 .custom-bg{
-    background-image: url('../../assets/cls1.jpeg');
+    background-image: url('/assets/gallery/cls1.jpeg');
     background-repeat: no-repeat;
     background-size:80%;
     background-position: right;
