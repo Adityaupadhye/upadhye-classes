@@ -14,9 +14,18 @@
 .txt-sec{
     font-size: 15px;
     font-weight: bold;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 5px;
 }
 
 .card-bg{
     background-color: antiquewhite;
+}
+
+a{
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
 }
