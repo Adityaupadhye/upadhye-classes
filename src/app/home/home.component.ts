@@ -12,7 +12,7 @@ export class HomeComponent implements OnInit {
 
   ngOnInit(): void {
     
-    this.titleService.changeTitle("Upadhye Classes | Aundh Pune");
+    this.titleService.changeTitle("Home - Upadhye Classes | Aundh Pune");
   }
 
   
