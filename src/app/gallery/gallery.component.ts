@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DynamicTitleService } from '../dynamic-title.service';
 
 @Component({
   selector: 'app-gallery',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GalleryComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: DynamicTitleService) { }
 
   galleryPath=[
     "/assets/gallery/cls1.jpeg",
@@ -22,6 +23,8 @@ export class GalleryComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+
+    this.title.changeTitle("Gallery - Upadhye Classes | Aundh Pune")
   }
 
 }

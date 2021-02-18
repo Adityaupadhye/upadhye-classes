@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DynamicTitleService } from '../dynamic-title.service';
 
 @Component({
   selector: 'app-reviews',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ReviewsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title : DynamicTitleService) { }
 
   paths=[
     "/assets/reviews/r1.jpg",
@@ -21,6 +22,8 @@ export class ReviewsComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+
+    this.title.changeTitle("Student Reviews - Upadhye Classes | Aundh Pune")
   }
 
 }

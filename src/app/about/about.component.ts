@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DynamicTitleService } from '../dynamic-title.service';
 
 @Component({
   selector: 'app-about',
@@ -7,15 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutComponent implements OnInit {
 
-  constructor() { }
-
-  // about=[
-  //   "B.E EnTC Govt College of Engineering, Aurangabad (Topper)",
-  //   "10th and 12th Merit Holder",
-  //   "12th "
-  // ]
+  constructor( private mytitleService: DynamicTitleService) { }
 
   ngOnInit(): void {
+
+    this.mytitleService.changeTitle("About Us - Upadhye Classes | Aundh Pune");
+
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DynamicTitleService } from '../dynamic-title.service';
 
 @Component({
   selector: 'app-results',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResultsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private title: DynamicTitleService) { }
 
   res20 = [
     { name: "Kavya", mrks: "96.6 %"},
@@ -88,6 +89,8 @@ export class ResultsComponent implements OnInit {
   ]
 
   ngOnInit(): void {
+
+    this.title.changeTitle("Results - Upadhye Classes | Aundh Pune");
   }
 
 }
