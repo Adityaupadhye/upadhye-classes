@@ -11,7 +11,5 @@ export class DynamicTitleService {
 
   public changeTitle(newTitle: string){
     this.titleService.setTitle(newTitle);
-    console.log('title changed');
-    
   }
 }

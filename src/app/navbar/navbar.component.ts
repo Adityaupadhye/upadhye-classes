@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-navbar',
@@ -7,7 +8,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 
-  constructor() { }
+  tab=0;
+  nav="";
+  pages = ["Home", "About Us", "Results", "Gallery"];
+  constructor(public ts:Title) { }
 
   ngOnInit(): void {
   }

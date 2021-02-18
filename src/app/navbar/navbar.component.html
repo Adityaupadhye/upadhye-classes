@@ -7,12 +7,16 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-      <div class="navbar-nav">
-        <a class="nav-item nav-link item" style="color: gold; font-size: 18px;" routerLink="/home">Home <span class="sr-only">(current)</span></a>
+      <div class="navbar-nav" *ngFor="let page of pages">
+        <a [ngClass]="{'active-tab': this.ts.getTitle().includes(page)} || this.ts.getTitle().startsWith('Upadhye')" class="nav-item nav-link item" style="color: gold; font-size: 18px;" [routerLink]="['/',page.toLowerCase().split(' ')[0]]" >{{page}}</a>
+        <!-- <a [ngClass]="{'active-tab':tab==0}" class="nav-item nav-link item" style="color: gold; font-size: 18px;" (click)="tab = 0" routerLink="/home">Home</a>
         <a class="nav-item nav-link item" style="color: gold; font-size: 18px;" routerLink="/about">About us</a>
         <a class="nav-item nav-link item" style="color: gold; font-size: 18px;" routerLink="/results">Results</a>
-        <a class="nav-item nav-link item" style="color: gold; font-size: 18px;" routerLink="/gallery">Gallery</a>
-        <a class="nav-item nav-link item" style="color: gold; font-size: 18px;" routerLink="/reviews">What students think about us</a>
+        <a class="nav-item nav-link item" style="color: gold; font-size: 18px;" routerLink="/gallery">Gallery</a> -->
+        <!-- <a class="nav-item nav-link item" style="color: gold; font-size: 18px;" routerLink="/reviews">What students think about us</a> -->
+      </div>
+      <div class="navbar-nav">
+        <a [ngClass]="{'active-tab':this.ts.getTitle().includes('Student')}" class="nav-item nav-link item" style="color: gold; font-size: 18px;" routerLink="/reviews">What students think about us</a>
       </div>
       <div class="navbar-nav ml-auto">
         <a href="https://www.youtube.com/channel/UC8pBE2xt3X3gkWBzE2uOJPg" target="_blank">
