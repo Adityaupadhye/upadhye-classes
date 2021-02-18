@@ -31,6 +31,11 @@ const routes: Routes = [
   {
     path: 'reviews',
     component: ReviewsComponent
+  },
+  {
+    path: '**',
+    redirectTo: '/home',
+    pathMatch: 'full'
   }
 ];
 
