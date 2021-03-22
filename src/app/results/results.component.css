@@ -16,6 +16,11 @@
 }
 
 .txt{
+    text-align: left;
     font-size: 18px;
-    font-family:cursive ;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans';
+}
+
+.col-w{
+    width: 50%;
 }
